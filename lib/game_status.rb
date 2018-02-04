@@ -15,6 +15,8 @@ WIN_COMBINATIONS = [
   [2,4,6] #left diagonal
 ]
 
+board = ["X", "X", "X", "O", " ", "O", " ", " ", " "]
+
 def won?(board)
   for win_combination in WIN_COMBINATIONS
     for index in win_combination
