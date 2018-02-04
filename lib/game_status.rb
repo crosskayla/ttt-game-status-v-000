@@ -28,6 +28,8 @@ def won?(board)
       ohs << index
     end
   end
+  puts exes
+  puts ohs
 end
 
 won?(board)
