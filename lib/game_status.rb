@@ -56,10 +56,10 @@ def draw?(board)
 end
 
 draw_board = ["X", "O", "X", "O", "X", "X", "O", "X", "O"]
-draw?(draw_board) #=> true
+puts draw?(draw_board) #=> true
 
 x_diagonal_won = ["X", "O", "X", "O", "X", "O", "O", "O", "X"]
-draw?(x_diagonal_won) #=> false
+puts draw?(x_diagonal_won) #=> false
 
 incomplete_board = ["X", " ", "X", " ", "X", " ", "O", "O", "X"]
-draw?(incomplete_board) #=> false
+puts draw?(incomplete_board) #=> false
