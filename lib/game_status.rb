@@ -28,8 +28,8 @@ def won?(board)
       ohs << index
     end
   end
-  puts "This is exes: #{exes}"
-  puts "This is ohs: #{ohs}"
+  WIN_COMBINATIONS.any?|win_combination|
+    win_combination == exes
 end
 
 won?(board)
