@@ -20,6 +20,7 @@ def won?(board)
     for index in win_combination
       board.each_with_index do |space, index|
         puts "Contents: #{space}, Index; #{index}""
+      end
     end
   end
 end
