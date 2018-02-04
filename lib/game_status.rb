@@ -18,8 +18,15 @@ WIN_COMBINATIONS = [
 board = ["X", "X", "X", "O", " ", "O", " ", " ", " "]
 
 def won?(board)
+  exes = []
+  ohs = []
   board.each_with_index do |space, index|
-    puts "Contents: #{space}, Index; #{index}"
+    if space == "X"
+      exes << index
+    end
+    if space == "O"
+      ohs << index
+    end
   end
 end
 
