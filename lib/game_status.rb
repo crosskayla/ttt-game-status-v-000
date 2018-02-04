@@ -16,6 +16,8 @@ WIN_COMBINATIONS = [
 ]
 
 board = ["X", "X", "X", "O", " ", "O", " ", " ", " "]
+full_board = ["X", "O", "X", "O", "X", "X", "O", "X", "O"]
+
 
 def won?(board)
   exes = []
@@ -48,3 +50,8 @@ end
 def full?(board)
   board.all?{|space| space == "X" || space == "O"}
 end
+
+puts board
+puts full?(board)
+puts full_board
+puts full?(full_board)
