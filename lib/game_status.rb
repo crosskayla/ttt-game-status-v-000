@@ -19,6 +19,6 @@ board = ["X", "X", "X", "O", " ", "O", " ", " ", " "]
 
 def won?(board)
   board.each_with_index do |space, index|
-    puts "Contents: #{space}, Index; #{index}""
+    puts "Contents: #{space}, Index; #{index}"
   end
 end
