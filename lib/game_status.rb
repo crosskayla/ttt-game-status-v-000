@@ -63,7 +63,7 @@ puts draw?(draw_board) #=> true
 
 x_diagonal_won = ["X", "O", "X", "O", "X", "O", "O", "O", "X"]
 puts draw?(x_diagonal_won) #=> false
-puts won?(x_diagonal_won)
+puts "won?: #{won?(x_diagonal_won)}""
 
 incomplete_board = ["X", " ", "X", " ", "X", " ", "O", "O", "X"]
 puts draw?(incomplete_board) #=> false
