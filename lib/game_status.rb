@@ -28,9 +28,20 @@ def won?(board)
       ohs << index
     end
   end
-  WIN_COMBINATIONS.any? do |win_combination|
+  ex_win = WIN_COMBINATIONS.any? do |win_combination|
     win_combination == exes
   end
+  oh_win = WIN_COMBINATIONS.any? do |win_combination|
+      win_combination == ohs
+  end
+  if ex_win
+    puts "X won!"
+    return exes
+  elsif oh_win
+    puts "Y won!"
+    return ohs
+  else
+    return false
 end
 
 won?(board)
