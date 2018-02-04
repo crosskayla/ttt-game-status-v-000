@@ -50,8 +50,3 @@ end
 def full?(board)
   board.all?{|space| space == "X" || space == "O"}
 end
-
-puts board
-puts full?(board)
-puts full_board
-puts full?(full_board)
