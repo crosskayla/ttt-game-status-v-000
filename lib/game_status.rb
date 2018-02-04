@@ -54,7 +54,7 @@ end
 def draw?(board)
   full?(board) && !won?(board)
   puts "full? evaluates to #{full?(board)}"
-  puts "won? evaluates to #{won?(board)}"
+  puts "!won? evaluates to #{!won?(board)}"
   puts "Both together evaluate to #{full?(board) && !won?(board)}"
 end
 
