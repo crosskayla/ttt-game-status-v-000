@@ -18,11 +18,7 @@ WIN_COMBINATIONS = [
 board = ["X", "X", "X", "O", " ", "O", " ", " ", " "]
 
 def won?(board)
-  for win_combination in WIN_COMBINATIONS
-    for index in win_combination
-      board.each_with_index do |space, index|
-        puts "Contents: #{space}, Index; #{index}""
-      end
-    end
+  board.each_with_index do |space, index|
+    puts "Contents: #{space}, Index; #{index}""
   end
 end
