@@ -28,8 +28,8 @@ def won?(board)
       ohs << index
     end
   end
-  puts exes
-  puts ohs
+  puts "This is exes: #{exes}"
+  puts "This is ohs: #{ohs}"
 end
 
 won?(board)
