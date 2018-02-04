@@ -30,6 +30,7 @@ def won?(board)
   end
   WIN_COMBINATIONS.any? do |win_combination|
     win_combination == exes
+  end
 end
 
 won?(board)
