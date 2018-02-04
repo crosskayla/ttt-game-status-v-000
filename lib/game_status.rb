@@ -42,6 +42,7 @@ def won?(board)
     return ohs
   else
     return false
+  end
 end
 
 won?(board)
