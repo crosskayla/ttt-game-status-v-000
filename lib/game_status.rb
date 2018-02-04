@@ -28,7 +28,7 @@ def won?(board)
       ohs << index
     end
   end
-  WIN_COMBINATIONS.any?|win_combination|
+  WIN_COMBINATIONS.any? do |win_combination|
     win_combination == exes
 end
 
