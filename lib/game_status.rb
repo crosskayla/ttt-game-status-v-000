@@ -22,3 +22,5 @@ def won?(board)
     puts "Contents: #{space}, Index; #{index}"
   end
 end
+
+won?(board)
