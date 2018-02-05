@@ -15,9 +15,6 @@ WIN_COMBINATIONS = [
   [2,4,6] #left diagonal
 ]
 
-board = ["X", "X", "X", "O", " ", "O", " ", " ", " "]
-full_board = ["X", "O", "X", "O", "X", "X", "O", "X", "O"]
-
 def won?(board)
   exes = []
   ohs = []
@@ -57,3 +54,12 @@ end
 def over?(board)
   draw?(board) || full?(board) || won?(board)
 end
+
+draw_board = ["X", "O", "X", "O", "X", "X", "O", "X", "O"]
+over?(draw_board) #=> true
+
+won_board = ["X", "O", "X", "O", "X", "X", "O", "O", "X"]
+over?(won_board) #=> true
+
+inprogress_board = ["X", " ", "X", " ", "X", " ", "O", "O", " "]
+over?(inprogress_board) #=> false
