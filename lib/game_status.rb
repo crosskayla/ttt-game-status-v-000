@@ -30,13 +30,13 @@ def won?(board)
       ohs << index
     end
   end
-  ex_win = WIN_COMBINATIONS.any? do |win_combination|
+  ex_win = WIN_COMBINATIONS.select do |win_combination|
     (win_combination - exes).empty?
   end
   oh_win = WIN_COMBINATIONS.any? do |win_combination|
     (win_combination - ohs).empty?
   end
-  if ex_win
+  if !ex_win.empty?
     puts "X won!"
     return exes
   elsif oh_win
