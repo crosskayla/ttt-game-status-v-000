@@ -31,7 +31,7 @@ def won?(board)
     end
   end
   ex_win = WIN_COMBINATIONS.any? do |win_combination|
-    win_combination - exes == 0
+    (win_combination - exes).empty?
     puts "win_combination - exes => #{win_combination - exes}"
   end
   oh_win = WIN_COMBINATIONS.any? do |win_combination|
