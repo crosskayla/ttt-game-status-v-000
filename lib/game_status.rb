@@ -18,7 +18,6 @@ WIN_COMBINATIONS = [
 board = ["X", "X", "X", "O", " ", "O", " ", " ", " "]
 full_board = ["X", "O", "X", "O", "X", "X", "O", "X", "O"]
 
-
 def won?(board)
   exes = []
   ohs = []
@@ -55,6 +54,4 @@ def draw?(board)
   full?(board) && !won?(board)
 end
 
-x_diagonal_won = ["X", "O", "X", "O", "X", "O", "O", "O", "X"]
-puts draw?(x_diagonal_won) #=> false
-puts "x_diagonal_won won?: #{won?(x_diagonal_won)}"
+full_board.won?
