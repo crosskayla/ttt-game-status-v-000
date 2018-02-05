@@ -33,10 +33,10 @@ def won?(board)
   puts "exes: #{exes}"
   puts "ohs: #{ohs}"
   ex_win = WIN_COMBINATIONS.any? do |win_combination|
-    exes - win_combination >= 0
+    win_combination - exes == 0
   end
   oh_win = WIN_COMBINATIONS.any? do |win_combination|
-    ohs - win_combination >= 0 
+    win_combination - ohs == 0
   end
   if ex_win
     puts "X won!"
