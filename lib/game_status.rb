@@ -58,12 +58,3 @@ def winner(board)
     return board[won?(board)[0]]
   end
 end
-
-x_win_diagonal = ["X", " ", " ", " ", "X", " ", " ", " ", "X"]
-puts winner(x_win_diagonal) #=> "X"
-
-o_win_center_column = ["X", "O", " ", " ", "O", " ", " ", "O", "X"]
-puts winner(o_win_center_column) #=> "O"
-
-no_winner_board = ["X", "O", " ", " ", " ", " ", " ", "O", "X"]
-puts winner(no_winner_board) #=> nil
