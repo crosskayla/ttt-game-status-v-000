@@ -30,6 +30,8 @@ def won?(board)
       ohs << index
     end
   end
+  puts "exes: #{exes}"
+  puts "ohs: #{ohs}"
   ex_win = WIN_COMBINATIONS.any? do |win_combination|
     win_combination == exes
   end
