@@ -38,7 +38,7 @@ def won?(board)
   end
   if !ex_win.empty?
     puts "X won!"
-    return exes
+    return ex_win
   elsif oh_win
     puts "Y won!"
     return ohs
