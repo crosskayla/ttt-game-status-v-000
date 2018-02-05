@@ -57,3 +57,12 @@ def winner(board)
   winning_array = won?(board)
   return board[winning_array[0]]
 end
+
+x_win_diagonal = ["X", " ", " ", " ", "X", " ", " ", " ", "X"]
+puts winner(x_win_diagonal) #=> "X"
+ 
+o_win_center_column = ["X", "O", " ", " ", "O", " ", " ", "O", "X"]
+puts winner(o_win_center_column) #=> "O"
+ 
+no_winner_board = ["X", "O", " ", " ", " ", " ", " ", "O", "X"]
+puts winner(no_winner_board) #=> nil
