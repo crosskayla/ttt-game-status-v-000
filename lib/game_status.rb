@@ -33,10 +33,8 @@ def won?(board)
     (win_combination - ohs).empty?
   end
   if !ex_win.empty?
-    puts "X won!"
     return ex_win[0]
   elsif !oh_win.empty?
-    puts "O won!"
     return oh_win[0]
   else
     return false
@@ -56,10 +54,10 @@ def over?(board)
 end
 
 draw_board = ["X", "O", "X", "O", "X", "X", "O", "X", "O"]
-over?(draw_board) #=> true
+puts over?(draw_board) #=> true
 
 won_board = ["X", "O", "X", "O", "X", "X", "O", "O", "X"]
-over?(won_board) #=> true
+puts over?(won_board) #=> true
 
 inprogress_board = ["X", " ", "X", " ", "X", " ", "O", "O", " "]
-over?(inprogress_board) #=> false
+puts over?(inprogress_board) #=> false
