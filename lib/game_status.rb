@@ -60,12 +60,6 @@ def draw?(board)
   puts "Both together evaluate to #{full?(board) && !won?(board)}"
 end
 
-draw_board = ["X", "O", "X", "O", "X", "X", "O", "X", "O"]
-puts draw?(draw_board) #=> true
-
 x_diagonal_won = ["X", "O", "X", "O", "X", "O", "O", "O", "X"]
 puts draw?(x_diagonal_won) #=> false
 puts "x_diagonal_won won?: #{won?(x_diagonal_won)}"
-
-incomplete_board = ["X", " ", "X", " ", "X", " ", "O", "O", "X"]
-puts draw?(incomplete_board) #=> false
