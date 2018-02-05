@@ -53,11 +53,6 @@ def over?(board)
   draw?(board) || full?(board) || won?(board)
 end
 
-draw_board = ["X", "O", "X", "O", "X", "X", "O", "X", "O"]
-puts over?(draw_board) #=> true
-
-won_board = ["X", "O", "X", "O", "X", "X", "O", "O", "X"]
-puts over?(won_board) #=> true
-
-inprogress_board = ["X", " ", "X", " ", "X", " ", "O", "O", " "]
-puts over?(inprogress_board) #=> false
+def winner(board)
+  won?(board)
+end
