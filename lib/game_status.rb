@@ -54,4 +54,6 @@ def draw?(board)
   full?(board) && !won?(board)
 end
 
-puts draw?(full_board)
+def over?(board)
+  
+end
