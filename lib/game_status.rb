@@ -53,9 +53,6 @@ end
 
 def draw?(board)
   full?(board) && !won?(board)
-  puts "full? evaluates to #{full?(board)}"
-  puts "!won? evaluates to #{!won?(board)}"
-  puts "Both together evaluate to #{full?(board) && !won?(board)}"
 end
 
 x_diagonal_won = ["X", "O", "X", "O", "X", "O", "O", "O", "X"]
