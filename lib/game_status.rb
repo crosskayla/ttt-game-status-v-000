@@ -35,7 +35,7 @@ def won?(board)
   end
   oh_win = WIN_COMBINATIONS.select do |win_combination|
     (win_combination - ohs).empty?
-  ends
+  end
   if !ex_win.empty?
     puts "X won!"
     return ex_win[0]
